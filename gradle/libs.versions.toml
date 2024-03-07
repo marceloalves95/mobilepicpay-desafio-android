@@ -1,0 +1,94 @@
+[versions]
+
+#Project
+kotlin = "1.8.10"
+gradle = "8.2.2"
+
+#Material and AndroidX
+material = "1.11.0"
+core-ktx = "1.12.0"
+appcompat = "1.6.1"
+constraintlayout = "2.1.4"
+
+#Lifecycle
+lifecycle = "2.7.0"
+
+#ThirdParty
+koin = "3.4.3"
+koin-view-model = "2.2.2"
+picasso = "2.71828"
+glide = "4.12.0"
+circleimageview = "3.0.0"
+
+#Network
+retrofit = "2.9.0"
+okhttp3-logging-interceptor = "5.0.0-alpha.3"
+
+#Others
+gson = "2.10"
+
+#Tests
+kotlinx-coroutines-test = "1.7.1"
+arch-core-testing = "2.2.0"
+assertK = "0.26.1"
+mockk = "1.13.7"
+junit = "4.13.2"
+test-core-ktx = "1.5.0"
+barista = "4.3.0"
+test-ext-junit = "1.1.5"
+test-runner = "1.5.2"
+org-jetbrains-kotlin-android = "1.8.10"
+
+[plugins]
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+
+[libraries]
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+#Material and AndroidX
+material = { module = "com.google.android.material:material", version.ref = "material" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+constraint-layout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+
+#Lifecycle
+live-data = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+view-model = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecyle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+
+#ThirdParty
+koin = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+picasso = { module = "com.squareup.picasso:picasso", version.ref="picasso"}
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview"}
+
+
+#Network
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+okhttp3-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp3-logging-interceptor" }
+rx-java3-adapter = { module = "com.squareup.retrofit2:adapter-rxjava3", version.ref = "retrofit" }
+
+#Others
+gson = { module = "com.google.code.gson:gson", version.ref = "gson"}
+
+#Test
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines-test" }
+arch-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "arch-core-testing" }
+assertK = { module = "com.willowtreeapps.assertk:assertk-jvm", version.ref = "assertK" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+junit = { module = "junit:junit", version.ref = "junit" }
+test-core-ktx = { module = "androidx.test:core-ktx", version.ref = "test-core-ktx" }
+barista = { module = "com.adevinta.android:barista", version.ref = "barista" }
+test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "test-ext-junit" }
+test-runner = { module = "androidx.test:runner", version.ref = "test-runner" }
+mockk-agent = { module = "io.mockk:mockk-agent-jvm", version.ref = "mockk" }
+
+[bundles]
+androidx = ["core-ktx", "appcompat", "constraint-layout"]
+lifecycle = ["live-data", "view-model", "lifecyle-runtime"]
+retrofit = ["retrofit", "converter-gson", "okhttp3-logging-interceptor"]
+rx = ["rxjava", "rxandroid"]
