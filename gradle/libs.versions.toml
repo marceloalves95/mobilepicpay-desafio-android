@@ -1,7 +1,7 @@
 [versions]
 
 #Project
-kotlin = "1.8.10"
+kotlin = "1.9.0"
 gradle = "8.2.2"
 
 #Material and AndroidX
@@ -47,6 +47,7 @@ gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
 #Material and AndroidX
+kotlin-stdlib-jdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlin" }
 material = { module = "com.google.android.material:material", version.ref = "material" }
 core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
@@ -91,4 +92,3 @@ mockk-agent = { module = "io.mockk:mockk-agent-jvm", version.ref = "mockk" }
 androidx = ["core-ktx", "appcompat", "constraint-layout"]
 lifecycle = ["live-data", "view-model", "lifecyle-runtime"]
 retrofit = ["retrofit", "converter-gson", "okhttp3-logging-interceptor"]
-rx = ["rxjava", "rxandroid"]
