@@ -38,6 +38,7 @@ barista = "4.3.0"
 test-ext-junit = "1.1.5"
 test-runner = "1.5.2"
 org-jetbrains-kotlin-android = "1.8.10"
+espresso-core = "3.5.1"
 
 [plugins]
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
@@ -87,6 +88,7 @@ barista = { module = "com.adevinta.android:barista", version.ref = "barista" }
 test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "test-ext-junit" }
 test-runner = { module = "androidx.test:runner", version.ref = "test-runner" }
 mockk-agent = { module = "io.mockk:mockk-agent-jvm", version.ref = "mockk" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
 
 [bundles]
 androidx = ["core-ktx", "appcompat", "constraint-layout"]

@@ -51,6 +51,10 @@ android {
 
 dependencies {
 
+    implementation(project(":libraries:network"))
+    implementation(project(":libraries:extensions"))
+    implementation(project(":libraries:testing"))
+
     implementation(libs.kotlin.stdlib.jdk7)
     implementation(libs.picasso)
     implementation(libs.gson)

@@ -16,3 +16,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "mobilepicpay-desafio-android"
 include(":app")
+include(":libraries:extensions")
+include(":libraries:network")
+include(":libraries:testing")
