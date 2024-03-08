@@ -39,6 +39,8 @@ test-ext-junit = "1.1.5"
 test-runner = "1.5.2"
 org-jetbrains-kotlin-android = "1.8.10"
 espresso-core = "3.5.1"
+hamcrest = "2.2"
+mockwebserver = "4.10.0"
 
 [plugins]
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
@@ -89,8 +91,10 @@ test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "test-ext-j
 test-runner = { module = "androidx.test:runner", version.ref = "test-runner" }
 mockk-agent = { module = "io.mockk:mockk-agent-jvm", version.ref = "mockk" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+hamcrest = { module = "org.hamcrest:hamcrest", version.ref = "hamcrest"}
+mockwebserver = { module = "com.squareup.okhttp3:mockwebserver", version.ref = "mockwebserver"}
 
 [bundles]
 androidx = ["core-ktx", "appcompat", "constraint-layout"]
 lifecycle = ["live-data", "view-model", "lifecyle-runtime"]
-retrofit = ["retrofit", "converter-gson", "okhttp3-logging-interceptor"]
+retrofit = ["retrofit", "converter-gson", "okhttp3-logging-interceptor", "mockwebserver"]

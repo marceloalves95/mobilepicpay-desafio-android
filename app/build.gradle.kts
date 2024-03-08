@@ -92,4 +92,6 @@ dependencies {
     androidTestImplementation(libs.test.core.ktx)
     androidTestImplementation(libs.arch.core.testing)
     androidTestImplementation(libs.barista)
+    androidTestImplementation(libs.espresso.core)
+    androidTestImplementation(libs.hamcrest)
 }
