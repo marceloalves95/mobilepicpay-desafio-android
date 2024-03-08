@@ -15,6 +15,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "mobilepicpay-desafio-android"
+includeBuild("includedBuilds/jacoco")
 include(":app")
 include(":libraries:extensions")
 include(":libraries:network")

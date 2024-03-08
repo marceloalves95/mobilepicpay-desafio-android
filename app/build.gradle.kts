@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("kotlin-parcelize")
+    id("jacoco-reports")
 }
 android {
     namespace = "com.picpay.desafio.android"
@@ -45,6 +46,12 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
             merges += "META-INF/LICENSE.md"
             merges += "META-INF/LICENSE-notice.md"
+        }
+    }
+    tasks.withType<Test> {
+        extensions.configure(JacocoTaskExtension::class) {
+            isIncludeNoLocationClasses = true
+            excludes = listOf("jdk.internal.*")
         }
     }
 }

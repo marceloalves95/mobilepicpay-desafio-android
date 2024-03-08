@@ -1,0 +1,2 @@
+jacoco:
+	./gradlew testDebugUnitTestCoverage
