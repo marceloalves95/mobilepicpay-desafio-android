@@ -40,7 +40,7 @@ test-runner = "1.5.2"
 org-jetbrains-kotlin-android = "1.8.10"
 espresso-core = "3.5.1"
 hamcrest = "2.2"
-mockwebserver = "4.10.0"
+mockwebserver = "5.0.0-alpha.3"
 
 [plugins]
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
