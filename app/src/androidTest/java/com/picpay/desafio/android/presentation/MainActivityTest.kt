@@ -7,9 +7,9 @@ import assertk.assertThat
 import assertk.assertions.isEqualTo
 import com.adevinta.android.barista.assertion.BaristaVisibilityAssertions.assertDisplayed
 import com.adevinta.android.barista.interaction.BaristaSleepInteractions.sleep
-import com.picpay.desafio.android.FileReader
+import com.picpay.desafio.android.others.FileReader
 import com.picpay.desafio.android.R
-import com.picpay.desafio.android.RecyclerViewMatchers
+import com.picpay.desafio.android.others.RecyclerViewMatchers
 import com.picpay.desafio.android.data.api.PicPayService
 import kotlinx.coroutines.runBlocking
 import okhttp3.mockwebserver.Dispatcher

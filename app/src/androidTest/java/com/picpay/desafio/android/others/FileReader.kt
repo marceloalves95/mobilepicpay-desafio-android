@@ -1,4 +1,4 @@
-package com.picpay.desafio.android
+package com.picpay.desafio.android.others
 
 import androidx.test.platform.app.InstrumentationRegistry
 import java.io.IOException
